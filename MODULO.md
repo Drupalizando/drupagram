@@ -1,30 +1,27 @@
-# Módulo 0 — Boas-vindas ao Drupalgram
+# Módulo 1 — Ambiente de Desenvolvimento
 
-Bem-vindo ao Drupalgram! Este branch é o ponto de partida do curso — o projeto está configurado com DDEV, mas o Drupal ainda não foi instalado. Isso acontece no Módulo 1.
+## O que foi construído
 
-## O que está neste branch
+- DDEV iniciado e Drupal 10 instalado via Composer
+- Drupal configurado: nome do site, banco de dados, credenciais de admin
+- Drush instalado e funcionando (`drush cr`)
+- Módulos de desenvolvimento habilitados: `devel`, `kint`, `web_profiler`
+- Site acessível em `https://drupagram.ddev.site`
 
-- Configuração do DDEV (`.ddev/config.yaml`)
-- Definição do projeto Composer (`composer.json`) com todos os módulos contrib que usaremos
-- `.gitignore` padrão para projetos Drupal
+## Conceitos Drupal introduzidos
 
-## Próximo passo
+- Estrutura de diretórios `web/`
+- `settings.php` e configuração de ambiente
+- O painel de administração e o Toolbar
 
-Abra o Módulo 1 do curso no Hotmart e instale o Drupal:
+## Exercício
+
+Instale o Drupal e tire um screenshot do seu painel de administração em `/admin`.
+
+## Próximo módulo
 
 ```bash
-git checkout modulo-01
+git checkout modulo-02
 ```
 
-Ou continue no branch atual e siga o Módulo 1 do zero:
-
-```bash
-ddev start
-composer install
-ddev drush site-install --account-name=admin --site-name="Drupalgram" -y
-ddev drush uli
-```
-
-## Curso no Hotmart
-
-👉 [Acessar Drupalgram no Hotmart](https://hotmart.com/product/drupalgram)
+👉 [Acessar Drupagram no Hotmart](https://hotmart.com/product/drupagram)
