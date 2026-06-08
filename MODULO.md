@@ -1,33 +1,25 @@
-# Módulo 9 — Tematização: O Visual do Instagram
+# Módulo 10 — Busca e Descoberta
 
 ## O que foi construído
 
-- Tema `drupalgram` criado do zero com:
-  - `drupalgram.info.yml`, `drupalgram.libraries.yml`
-  - Regiões: `header`, `main`, `sidebar`, `footer`
-  - `page.html.twig` — layout geral
-  - `node--photo-post--teaser.html.twig` — card do feed
-  - `node--photo-post.html.twig` — página do post
-  - `user.html.twig` — página de perfil
-- CSS Grid 3 colunas (desktop) / 1 coluna (mobile)
-- Navbar com logo, barra de busca (placeholder), ícones
-- Paleta inspirada no Instagram (branco, preto, gradiente)
+- Página `/explorar`: grid com todos os posts, ordenados por curtidas (Views sort por Flag count)
+- Exposed filter: busca por palavra-chave na legenda
+- Block de tag cloud (Taxonomy terms via Views)
+- URL limpa `/explorar` via Pathauto
 
 ## Conceitos Drupal introduzidos
 
-- Twig variables: `{{ content }}`, `{{ node }}`, `{{ user }}`
-- Libraries e asset attachment
-- Theme hooks e suggestions
-- `hook_theme_suggestions_alter()`
+- Views sort por relationship count
+- Tag cloud como Views block
 
 ## Exercício
 
-Estilize o teaser do Photo Post para corresponder ao screenshot fornecido no curso.
+Construa a página `/explorar` com filtro de busca por palavra-chave.
 
 ## Próximo módulo
 
 ```bash
-git checkout modulo-10
+git checkout modulo-11
 ```
 
 👉 [Acessar Drupalgram no Hotmart](https://hotmart.com/product/drupalgram)
