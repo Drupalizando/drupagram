@@ -1,8 +1,14 @@
 {
-    "name": "drupalizando/drupalgram",
-    "description": "Drupalgram — construindo o Instagram com Drupal. Drupalizando Build Series, Curso 1.",
+    "name": "drupalizando/drupagram",
+    "description": "Drupagram — construindo o Instagram com Drupal. Drupalizando Build Series, Curso 1.",
     "type": "project",
     "license": "MIT",
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    },
     "require": {
         "composer/installers": "^2.0",
         "drupal/core-composer-scaffold": "^10.0",
@@ -13,8 +19,7 @@
         "drush/drush": "^12.0"
     },
     "require-dev": {
-        "drupal/devel": "^5.0",
-        "drupal/kint": "^5.0"
+        "drupal/devel": "^5.0"
     },
     "config": {
         "allow-plugins": {

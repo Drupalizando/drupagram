@@ -1,10 +1,10 @@
-# Drupalgram
+# Drupagram
 
 > **Drupalizando Build Series — Curso 1 de 8**
 
 Construa uma rede social de fotos como o Instagram com Drupal — feed de fotos, perfis de usuário, hashtags, curtidas e comentários. Do zero ao deploy, totalmente em português.
 
-🎓 **[Acesse o curso completo no Hotmart →](https://hotmart.com/product/drupalgram)**
+🎓 **[Acesse o curso completo no Hotmart →](https://hotmart.com/product/drupagram)**
 
 ---
 
@@ -38,12 +38,12 @@ Para começar um módulo, faça checkout do branch do módulo **anterior**.
 ### Começar do zero (Módulo 1)
 
 ```bash
-git clone https://github.com/Drupalizando/drupalgram.git
-cd drupalgram
+git clone https://github.com/Drupalizando/drupagram.git
+cd drupagram
 git checkout modulo-00
 ddev start
 composer install
-ddev drush site-install --account-name=admin --site-name="Drupalgram" -y
+ddev drush site-install --account-name=admin --site-name="Drupagram" -y
 ddev drush uli
 ```
 
@@ -72,7 +72,7 @@ ddev drush uli
 | `modulo-06` | Views: feed, perfil, hashtag | Módulo 7 |
 | `modulo-07` | Likes com Flag | Módulo 8 |
 | `modulo-08` | Comentários | Módulo 9 |
-| `modulo-09` | Tema Drupalgram | Módulo 10 |
+| `modulo-09` | Tema Drupagram | Módulo 10 |
 | `modulo-10` | Página Explorar + busca | Módulo 11 |
 | `modulo-11` | Cache + config management | Módulo 12 |
 | `modulo-12` | Site no ar (deploy) | Módulo Bônus |
