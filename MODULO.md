@@ -1,29 +1,25 @@
-# Módulo 2 — Arquitetura de Conteúdo: O Post de Foto
+# Módulo 3 — Media e Imagens
 
 ## O que foi construído
 
-- Content type `Photo Post` com campos:
-  - `field_photo` — Image (Media reference)
-  - `field_caption` — Text (plain, long)
-  - `field_hashtags` — Entity reference → Taxonomy (Hashtags)
-  - `field_location` — Text (plain)
-- Form display configurado
-- View modes: Default e Teaser configurados
+- Image styles: `drupalgram_thumbnail` (150×150 crop), `drupalgram_feed` (600×600 crop), `drupalgram_full` (1080px scale)
+- Responsive Image styles configurados
+- Media Library habilitada e configurada
 
 ## Conceitos Drupal introduzidos
 
-- Nodes, fields e entities
-- Display modes (view modes) e form modes
-- Cardinalidade de campos
+- Image styles e effects
+- Responsive images
+- Media entities vs. file entities
 
 ## Exercício
 
-Crie 5 Photo Posts de teste com imagens reais.
+Faça upload de 10 imagens e confirme que as thumbnails renderizam nas dimensões corretas.
 
 ## Próximo módulo
 
 ```bash
-git checkout modulo-03
+git checkout modulo-04
 ```
 
 👉 [Acessar Drupalgram no Hotmart](https://hotmart.com/product/drupalgram)
