@@ -1,0 +1,25 @@
+# Drupal
+web/core
+web/modules/contrib
+web/themes/contrib
+web/profiles/contrib
+web/libraries
+web/sites/default/files
+web/sites/default/settings.local.php
+
+# Composer
+/vendor
+/web/autoload.php
+
+# DDEV
+.ddev/.gitignore
+.ddev/import-db/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
