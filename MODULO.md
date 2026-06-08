@@ -1,27 +1,27 @@
-# Módulo 7 — Sistema de Likes com Flag
+# Módulo 8 — Comentários
 
 ## O que foi construído
 
-- Módulo Flag instalado via Composer
-- Flag `like_photo` criado no entity Photo Post
-- Permissões: somente usuários autenticados
-- Like button no teaser com AJAX toggle (sem reload de página)
-- Contagem de curtidas exibida no feed via Views relationship
+- Módulo Comment (core) habilitado e configurado no Photo Post
+- Campo comment adicionado ao content type
+- Display: avatar + username do autor acima do texto
+- Permissões: posts autenticados, sem comentários anônimos
+- Moderação de comentários configurada
 
 ## Conceitos Drupal introduzidos
 
-- Workflow de módulos contrib (Composer → enable → configure)
-- Flag module flags
-- Views relationships com tabelas customizadas
+- Comment field type
+- Comment entity e seus display modes
+- Field formatters
 
 ## Exercício
 
-Curta 3 posts e verifique que a contagem é atualizada.
+Poste 3 comentários em posts diferentes usando 3 contas de usuário distintas.
 
 ## Próximo módulo
 
 ```bash
-git checkout modulo-08
+git checkout modulo-09
 ```
 
 👉 [Acessar Drupalgram no Hotmart](https://hotmart.com/product/drupalgram)
