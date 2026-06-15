@@ -1,0 +1,44 @@
+uuid: 682fb592-0ee8-4e78-872e-0621c0d70e24
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.post.field_descricao
+    - field.field.node.post.field_foto
+    - image.style.large
+    - node.type.post
+  module:
+    - image
+    - text
+    - user
+id: node.post.default
+targetEntityType: node
+bundle: post
+mode: default
+content:
+  field_descricao:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_foto:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  langcode: true

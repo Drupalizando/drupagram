@@ -1,0 +1,11 @@
+uuid: 5730296e-e10e-41bb-9452-d6187a316a6e
+langcode: pt-br
+status: true
+dependencies: {  }
+name: 'Post de Foto'
+type: post
+description: 'Post de foto do Drupagram.'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

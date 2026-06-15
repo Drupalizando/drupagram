@@ -1,0 +1,22 @@
+uuid: d47d7fb6-a275-4841-b28c-b254568bc221
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_descricao
+    - node.type.post
+  module:
+    - text
+id: node.post.field_descricao
+field_name: field_descricao
+entity_type: node
+bundle: post
+label: Descrição
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long
