@@ -1,27 +1,17 @@
-uuid: 763e1627-a03e-4038-9c8e-9caf750d1f23
+uuid: 524094ea-3002-48bf-a182-636390468d8e
 langcode: pt-br
 status: true
 dependencies:
   module:
-    - file
-    - image
+    - media
     - node
 id: node.field_foto
 field_name: field_foto
 entity_type: node
-type: image
+type: entity_reference
 settings:
-  target_type: file
-  display_field: false
-  display_default: true
-  uri_scheme: public
-  default_image:
-    uuid: null
-    alt: ''
-    title: ''
-    width: null
-    height: null
-module: image
+  target_type: media
+module: core
 locked: false
 cardinality: 1
 translatable: true

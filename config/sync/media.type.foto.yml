@@ -1,0 +1,13 @@
+uuid: 7fbdd19c-af4c-4485-a076-651b6208eb98
+langcode: pt-br
+status: true
+dependencies: {  }
+id: foto
+label: Foto
+description: 'Imagens para posts do Drupagram.'
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map: {  }
