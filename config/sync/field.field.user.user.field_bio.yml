@@ -1,0 +1,22 @@
+uuid: a581b339-72e4-48ad-af37-dae71e4067fc
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_bio
+  module:
+    - text
+    - user
+id: user.user.field_bio
+field_name: field_bio
+entity_type: user
+bundle: user
+label: Bio
+description: 'Fale um pouco sobre você.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long
