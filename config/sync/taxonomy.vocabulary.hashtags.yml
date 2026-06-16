@@ -1,0 +1,9 @@
+uuid: 17c31141-baea-4863-912a-196862033bf2
+langcode: pt-br
+status: true
+dependencies: {  }
+name: Hashtags
+vid: hashtags
+description: 'Hashtags usadas nos posts do Drupagram.'
+weight: 0
+new_revision: false

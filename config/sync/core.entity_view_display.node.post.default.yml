@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.post.field_descricao
     - field.field.node.post.field_foto
+    - field.field.node.post.field_hashtags
     - node.type.post
   module:
     - text
@@ -29,6 +30,14 @@ content:
       link: false
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_hashtags:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
     region: content
   links:
     settings: {  }

@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.post.field_descricao
     - field.field.node.post.field_foto
+    - field.field.node.post.field_hashtags
     - node.type.post
   module:
     - media_library
@@ -35,6 +36,16 @@ content:
     region: content
     settings:
       media_types: {  }
+    third_party_settings: {  }
+  field_hashtags:
+    type: entity_reference_autocomplete_tags
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: '#praia #viagem #drupal'
     third_party_settings: {  }
   langcode:
     type: language_select
