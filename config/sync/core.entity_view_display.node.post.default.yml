@@ -3,11 +3,14 @@ langcode: pt-br
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.comment.default
+    - field.field.node.post.field_comentarios
     - field.field.node.post.field_descricao
     - field.field.node.post.field_foto
     - field.field.node.post.field_hashtags
     - node.type.post
   module:
+    - comment
     - text
     - user
 id: node.post.default
@@ -15,6 +18,15 @@ targetEntityType: node
 bundle: post
 mode: default
 content:
+  field_comentarios:
+    type: comment_default
+    label: hidden
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 10
+    region: content
   field_descricao:
     type: text_default
     label: above
@@ -38,6 +50,11 @@ content:
       link: true
     third_party_settings: {  }
     weight: 2
+    region: content
+  flag_curtir:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
     region: content
   links:
     settings: {  }

@@ -3,11 +3,13 @@ langcode: pt-br
 status: true
 dependencies:
   config:
+    - field.field.node.post.field_comentarios
     - field.field.node.post.field_descricao
     - field.field.node.post.field_foto
     - field.field.node.post.field_hashtags
     - node.type.post
   module:
+    - comment
     - media_library
     - path
     - text
@@ -18,6 +20,12 @@ mode: default
 content:
   created:
     type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_comentarios:
+    type: comment_default
     weight: 10
     region: content
     settings: {  }
