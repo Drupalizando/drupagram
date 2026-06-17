@@ -1,0 +1,26 @@
+uuid: 7c55fa5b-43ec-4952-a75e-9ccdcd298432
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.post
+  module:
+    - flag
+id: curtir
+label: Curtir
+bundles:
+  - post
+entity_type: node
+global: false
+flag_short: Curtir
+flag_long: 'Curtir este post'
+flag_message: ''
+unflag_short: Descurtir
+unflag_long: 'Descurtir este post'
+unflag_message: ''
+unflag_denied_text: ''
+weight: 0
+flag_type: null
+link_type: reload
+flagTypeConfig: {  }
+linkTypeConfig: {  }
