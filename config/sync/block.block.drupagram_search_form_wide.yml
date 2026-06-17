@@ -1,0 +1,23 @@
+uuid: 4a714110-0778-4443-aa5d-99132ad8f524
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - drupagram
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: drupagram_search_form_wide
+theme: drupagram
+region: secondary_menu
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Formulário de busca (largo)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

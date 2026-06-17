@@ -1,0 +1,25 @@
+uuid: cb55ce8b-322c-4693-8aa1-03e11ef8f0b2
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupagram
+_core:
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
+id: drupagram_site_branding
+theme: drupagram
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Definição de marca do site'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

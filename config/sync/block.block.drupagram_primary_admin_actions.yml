@@ -1,0 +1,20 @@
+uuid: d5ae1d55-6500-444c-8ac2-37fda3fd54a5
+langcode: pt-br
+status: true
+dependencies:
+  theme:
+    - drupagram
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: drupagram_primary_admin_actions
+theme: drupagram
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Ações primárias do administrador'
+  label_display: '0'
+  provider: core
+visibility: {  }

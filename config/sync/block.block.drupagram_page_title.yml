@@ -1,0 +1,20 @@
+uuid: 6dc5a647-a0f0-4115-82c4-df84edb23adb
+langcode: pt-br
+status: true
+dependencies:
+  theme:
+    - drupagram
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: drupagram_page_title
+theme: drupagram
+region: sidebar_first
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Título da página'
+  label_display: '0'
+  provider: core
+visibility: {  }

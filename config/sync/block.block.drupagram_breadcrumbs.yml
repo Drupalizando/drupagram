@@ -1,0 +1,22 @@
+uuid: 1a9f9bc3-e0d9-4acd-a4d6-eb406faee04a
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupagram
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: drupagram_breadcrumbs
+theme: drupagram
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

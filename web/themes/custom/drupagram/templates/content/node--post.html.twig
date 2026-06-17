@@ -1,0 +1,41 @@
+{#
+  Template para o Post de Foto do Drupagram.
+#}
+{{ attach_library('drupagram/feed') }}
+<article{{ attributes.addClass('node--type-post', 'node--view-mode-' ~ view_mode) }}>
+
+  <header class="node__meta">
+    {{ author_picture }}
+    <span class="node__author">{{ author_name }}</span>
+    <span class="node__date">{{ date }}</span>
+  </header>
+
+  <div class="node__content">
+    {{ content.field_foto }}
+
+    {% if content.flag_curtir is not empty %}
+      <div class="node__actions">
+        {{ content.flag_curtir }}
+      </div>
+    {% endif %}
+
+    {% if content.field_descricao is not empty %}
+      <div class="node__descricao">
+        {{ content.field_descricao }}
+      </div>
+    {% endif %}
+
+    {% if content.field_hashtags is not empty %}
+      <div class="node__hashtags">
+        {{ content.field_hashtags }}
+      </div>
+    {% endif %}
+
+    {% if content.field_comentarios is not empty %}
+      <div class="node__comentarios">
+        {{ content.field_comentarios }}
+      </div>
+    {% endif %}
+  </div>
+
+</article>

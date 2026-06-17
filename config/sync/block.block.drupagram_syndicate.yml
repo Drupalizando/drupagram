@@ -1,0 +1,23 @@
+uuid: 3e9b8e20-238f-4752-bcd6-e96d9e4bd45d
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - drupagram
+_core:
+  default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
+id: drupagram_syndicate
+theme: drupagram
+region: sidebar_first
+weight: 0
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'Feed RSS'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }

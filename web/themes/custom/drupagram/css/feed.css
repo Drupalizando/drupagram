@@ -1,0 +1,123 @@
+/* Drupagram — Feed Grid */
+
+:root {
+  --dg-primary: #3897f0;
+  --dg-border: #dbdbdb;
+  --dg-bg: #fafafa;
+  --dg-white: #fff;
+  --dg-text: #262626;
+  --dg-secondary: #8e8e8e;
+  --dg-max-width: 935px;
+}
+
+body {
+  background: var(--dg-bg);
+  color: var(--dg-text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* Feed layout */
+.view-feed-fotos .view-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+  max-width: var(--dg-max-width);
+  margin: 0 auto;
+  padding: 16px 0;
+}
+
+/* Post card */
+.node--type-post.node--view-mode-default {
+  max-width: var(--dg-max-width);
+  margin: 0 auto 16px;
+  background: var(--dg-white);
+  border: 1px solid var(--dg-border);
+  border-radius: 3px;
+}
+
+/* Post image — square crop in feed grid */
+.view-feed-fotos .field--name-field-foto {
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.view-feed-fotos .field--name-field-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Post header (author + date) */
+.node__meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--dg-border);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Hashtags */
+.field--name-field-hashtags {
+  padding: 8px 16px;
+}
+
+.field--name-field-hashtags a {
+  color: var(--dg-primary);
+  text-decoration: none;
+  margin-right: 4px;
+}
+
+/* Description */
+.field--name-field-descricao {
+  padding: 0 16px 8px;
+  line-height: 1.5;
+}
+
+/* Curtidas (flag link) */
+.flag-curtir {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--dg-text);
+  text-decoration: none;
+}
+
+.flag-curtir.action-flag::before { content: '🤍'; }
+.flag-curtir.action-unflag::before { content: '❤️'; }
+
+/* Comments */
+.comment-wrapper {
+  padding: 0 16px 12px;
+  border-top: 1px solid var(--dg-border);
+  margin-top: 8px;
+}
+
+/* Pager */
+.pager {
+  text-align: center;
+  padding: 24px 0;
+}
+
+.pager__item a {
+  color: var(--dg-primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .view-feed-fotos .view-content {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+  }
+}

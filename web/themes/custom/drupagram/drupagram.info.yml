@@ -1,0 +1,22 @@
+name: Drupagram
+type: theme
+'base theme': stable9
+version: 1.0.0
+libraries:
+  - drupagram/base
+  - drupagram/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - drupagram/user
+  core/drupal.dropbutton:
+    - drupagram/dropbutton
+  core/drupal.dialog:
+    - drupagram/dialog
+  file/drupal.file:
+    - drupagram/file
+  core/drupal.progress:
+    - drupagram/progress
+description: 'Tema do Drupagram — construindo o Instagram com Drupal'
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.6.10'

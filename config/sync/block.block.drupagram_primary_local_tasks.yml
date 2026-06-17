@@ -1,0 +1,22 @@
+uuid: 5bcbd8b6-da0d-4d13-b421-e93c925e534a
+langcode: pt-br
+status: true
+dependencies:
+  theme:
+    - drupagram
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: drupagram_primary_local_tasks
+theme: drupagram
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Abas primárias'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

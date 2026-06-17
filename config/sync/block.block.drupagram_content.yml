@@ -1,0 +1,22 @@
+uuid: 88e36c0e-57f9-4847-abae-225c71c4a89d
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupagram
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: drupagram_content
+theme: drupagram
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Conteúdo da página principal'
+  label_display: '0'
+  provider: system
+visibility: {  }

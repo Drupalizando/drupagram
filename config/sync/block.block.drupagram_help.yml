@@ -1,0 +1,22 @@
+uuid: e3f45e6a-bb74-42c5-9710-3fc83a41103d
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - drupagram
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: drupagram_help
+theme: drupagram
+region: sidebar_first
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Ajuda
+  label_display: '0'
+  provider: help
+visibility: {  }
