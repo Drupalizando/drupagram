@@ -1,0 +1,24 @@
+uuid: e76d444f-01f7-49e9-bc9f-2c0e45952689
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.post
+  module:
+    - node
+id: post_pattern
+label: Posts
+type: 'canonical_entities:node'
+pattern: '/post/[node:title]'
+selection_criteria:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: b75262c3-eb55-4bae-a9e9-2d4381d81478
+    context_mapping:
+      node: node
+    bundles:
+      post: post
+selection_logic: and
+weight: 0
+relationships: {  }
