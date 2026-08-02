@@ -1,27 +1,25 @@
-# Módulo 1 — Ambiente de Desenvolvimento
+# Módulo 11 — Performance e Configuração
 
 ## O que foi construído
 
-- DDEV iniciado e Drupal 10 instalado via Composer
-- Drupal configurado: nome do site, banco de dados, credenciais de admin
-- Drush instalado e funcionando (`drush cr`)
-- Módulos de desenvolvimento habilitados: `devel`, `kint`, `web_profiler`
-- Site acessível em `https://drupagram.ddev.site`
+- Page cache, dynamic page cache e render cache habilitados
+- Agregação de CSS/JS habilitada para produção
+- Config management funcionando: `drush config:export` / `drush config:import`
+- `settings.local.php` para overrides específicos de desenvolvimento
 
 ## Conceitos Drupal introduzidos
 
-- Estrutura de diretórios `web/`
-- `settings.php` e configuração de ambiente
-- O painel de administração e o Toolbar
+- Config management workflow
+- Cache tags e cache contexts
 
 ## Exercício
 
-Instale o Drupal e tire um screenshot do seu painel de administração em `/admin`.
+Exporte a configuração e simule um "deploy": apague e reimporte a config.
 
 ## Próximo módulo
 
 ```bash
-git checkout modulo-02
+git checkout modulo-12
 ```
 
-👉 [Acessar Drupagram no Hotmart](https://hotmart.com/product/drupagram)
+👉 [Acessar Drupagram em drupalizando.com.br](https://drupalizando.com.br/#cursos)
