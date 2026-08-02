@@ -16,11 +16,11 @@ Parabéns! Você tem agora um clone funcional do Instagram com Drupal:
 
 No próximo curso da série você vai construir um fórum de votação como o Reddit — posts, upvotes, subforuns e uma API REST. Custom modules, Hooks e muito mais.
 
-👉 [Ver Drupreddit no Hotmart →](https://hotmart.com/product/drupreddit)
+👉 [Ver a série completa em drupalizando.com.br →](https://drupalizando.com.br/#cursos)
 
 ## Comunidade
 
-- Discord / Telegram: link no Hotmart
+- Discord / Telegram: link em drupalizando.com.br
 - GitHub: [github.com/Drupalizando](https://github.com/Drupalizando)
 
 ## Precisa de uma equipe Drupal?
