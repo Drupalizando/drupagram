@@ -1,27 +1,24 @@
-# Módulo 1 — Ambiente de Desenvolvimento
+# Módulo 10 — Busca e Descoberta
 
 ## O que foi construído
 
-- DDEV iniciado e Drupal 10 instalado via Composer
-- Drupal configurado: nome do site, banco de dados, credenciais de admin
-- Drush instalado e funcionando (`drush cr`)
-- Módulos de desenvolvimento habilitados: `devel`, `kint`, `web_profiler`
-- Site acessível em `https://drupagram.ddev.site`
+- Página Explorar (`/explorar`) com grid de posts recentes de todos os usuários
+- Ordenação por mais curtidos (Views sort pela contagem de Flag)
+- Bloco de nuvem de tags (listagem de termos de Taxonomy via Views)
 
 ## Conceitos Drupal introduzidos
 
-- Estrutura de diretórios `web/`
-- `settings.php` e configuração de ambiente
-- O painel de administração e o Toolbar
+- Views sort by relationship count
+- Tag cloud como bloco de Views
 
 ## Exercício
 
-Instale o Drupal e tire um screenshot do seu painel de administração em `/admin`.
+Construa a página `/explorar` com um filtro de busca por palavra-chave.
 
 ## Próximo módulo
 
 ```bash
-git checkout modulo-02
+git checkout modulo-11
 ```
 
-👉 [Acessar Drupagram no Hotmart](https://hotmart.com/product/drupagram)
+👉 [Acessar Drupagram em drupalizando.com.br](https://drupalizando.com.br/#cursos)
