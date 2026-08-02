@@ -1,27 +1,25 @@
-# Módulo 1 — Ambiente de Desenvolvimento
+# Módulo 4 — Perfis de Usuário
 
 ## O que foi construído
 
-- DDEV iniciado e Drupal 10 instalado via Composer
-- Drupal configurado: nome do site, banco de dados, credenciais de admin
-- Drush instalado e funcionando (`drush cr`)
-- Módulos de desenvolvimento habilitados: `devel`, `kint`, `web_profiler`
-- Site acessível em `https://drupagram.ddev.site`
+- Campos customizados na entidade User: `field_avatar`, `field_bio` (até 160 caracteres), `field_website` e `field_username_display`
+- Account form display e o view mode de perfil do usuário configurados
+- 3 contas de teste criadas com perfis preenchidos
 
 ## Conceitos Drupal introduzidos
 
-- Estrutura de diretórios `web/`
-- `settings.php` e configuração de ambiente
-- O painel de administração e o Toolbar
+- Entity types: User, Node, Taxonomy Term
+- Field UI na entidade User
+- O grid de permissões
 
 ## Exercício
 
-Instale o Drupal e tire um screenshot do seu painel de administração em `/admin`.
+Crie seu próprio perfil com avatar e bio.
 
 ## Próximo módulo
 
 ```bash
-git checkout modulo-02
+git checkout modulo-05
 ```
 
-👉 [Acessar Drupagram no Hotmart](https://hotmart.com/product/drupagram)
+👉 [Acessar Drupagram em drupalizando.com.br](https://drupalizando.com.br/#cursos)
