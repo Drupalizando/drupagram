@@ -27,4 +27,4 @@ ddev drush uli
 
 ## Curso no Hotmart
 
-👉 [Acessar Drupagram no Hotmart](https://hotmart.com/product/drupagram)
+👉 [Acessar Drupagram em drupalizando.com.br](https://drupalizando.com.br/#cursos)
