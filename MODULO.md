@@ -1,27 +1,26 @@
-# Módulo 1 — Ambiente de Desenvolvimento
+# Módulo 8 — Comentários
 
 ## O que foi construído
 
-- DDEV iniciado e Drupal 10 instalado via Composer
-- Drupal configurado: nome do site, banco de dados, credenciais de admin
-- Drush instalado e funcionando (`drush cr`)
-- Módulos de desenvolvimento habilitados: `devel`, `kint`, `web_profiler`
-- Site acessível em `https://drupagram.ddev.site`
+- Módulo Comment (core) habilitado e campo de comentário adicionado ao Photo Post
+- Formulário de comentário configurado: threading, preview, comentário anônimo desabilitado
+- Exibição do avatar e nome do autor acima do texto do comentário
+- Permissões de quem pode postar, editar e excluir comentários
 
 ## Conceitos Drupal introduzidos
 
-- Estrutura de diretórios `web/`
-- `settings.php` e configuração de ambiente
-- O painel de administração e o Toolbar
+- Comment field type
+- Comment entity e seus display modes
+- Field formatters
 
 ## Exercício
 
-Instale o Drupal e tire um screenshot do seu painel de administração em `/admin`.
+Poste 3 comentários em posts diferentes, usando contas de usuário diferentes.
 
 ## Próximo módulo
 
 ```bash
-git checkout modulo-02
+git checkout modulo-09
 ```
 
-👉 [Acessar Drupagram no Hotmart](https://hotmart.com/product/drupagram)
+👉 [Acessar Drupagram em drupalizando.com.br](https://drupalizando.com.br/#cursos)
