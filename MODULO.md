@@ -1,27 +1,28 @@
-# Módulo 1 — Ambiente de Desenvolvimento
+# Módulo 6 — Views: O Feed de Fotos
 
 ## O que foi construído
 
-- DDEV iniciado e Drupal 10 instalado via Composer
-- Drupal configurado: nome do site, banco de dados, credenciais de admin
-- Drush instalado e funcionando (`drush cr`)
-- Módulos de desenvolvimento habilitados: `devel`, `kint`, `web_profiler`
-- Site acessível em `https://drupagram.ddev.site`
+- View do feed principal — página em `/feed`, lista de teasers, paginação de 12 em 12
+- Block display para "Posts Recentes" na sidebar
+- View do feed de perfil, com contextual filter pelo autor
+- View do feed de hashtag, com contextual filter pelo termo de taxonomia
+- Filtro exposto por localização
 
 ## Conceitos Drupal introduzidos
 
-- Estrutura de diretórios `web/`
-- `settings.php` e configuração de ambiente
-- O painel de administração e o Toolbar
+- Views displays (Page, Block, Embed)
+- Relationships e contextual filters
+- Filtros expostos
+- Views caching
 
 ## Exercício
 
-Instale o Drupal e tire um screenshot do seu painel de administração em `/admin`.
+Construa uma View customizada mostrando posts de uma hashtag específica, paginada de 9 em 9.
 
 ## Próximo módulo
 
 ```bash
-git checkout modulo-02
+git checkout modulo-07
 ```
 
-👉 [Acessar Drupagram no Hotmart](https://hotmart.com/product/drupagram)
+👉 [Acessar Drupagram em drupalizando.com.br](https://drupalizando.com.br/#cursos)
