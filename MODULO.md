@@ -1,27 +1,27 @@
-# Módulo 1 — Ambiente de Desenvolvimento
+# Módulo 12 — Deploy: Colocando no Ar
 
 ## O que foi construído
 
-- DDEV iniciado e Drupal 10 instalado via Composer
-- Drupal configurado: nome do site, banco de dados, credenciais de admin
-- Drush instalado e funcionando (`drush cr`)
-- Módulos de desenvolvimento habilitados: `devel`, `kint`, `web_profiler`
-- Site acessível em `https://drupagram.ddev.site`
+- Site Drupagram acessível publicamente na internet
+- Stack LAMP configurada (Apache/Nginx, PHP 8.2, MariaDB)
+- Banco de dados exportado do DDEV e importado no servidor
+- Domínio configurado com SSL via Let's Encrypt (Certbot)
+- Checklist de "ir ao ar" concluído: logs de erro desligados, cache ligado, credenciais de admin trocadas
 
 ## Conceitos Drupal introduzidos
 
-- Estrutura de diretórios `web/`
-- `settings.php` e configuração de ambiente
-- O painel de administração e o Toolbar
+- Production vs. development settings
+- Trusted host patterns
+- Permissões do sistema de arquivos
 
 ## Exercício
 
-Instale o Drupal e tire um screenshot do seu painel de administração em `/admin`.
+Faça o deploy do seu Drupagram para uma URL ao vivo e compartilhe na comunidade.
 
 ## Próximo módulo
 
 ```bash
-git checkout modulo-02
+git checkout modulo-bonus
 ```
 
-👉 [Acessar Drupagram no Hotmart](https://hotmart.com/product/drupagram)
+👉 [Acessar Drupagram em drupalizando.com.br](https://drupalizando.com.br/#cursos)
