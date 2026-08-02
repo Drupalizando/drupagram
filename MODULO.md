@@ -1,27 +1,26 @@
-# Módulo 1 — Ambiente de Desenvolvimento
+# Módulo 3 — Media e Imagens
 
 ## O que foi construído
 
-- DDEV iniciado e Drupal 10 instalado via Composer
-- Drupal configurado: nome do site, banco de dados, credenciais de admin
-- Drush instalado e funcionando (`drush cr`)
-- Módulos de desenvolvimento habilitados: `devel`, `kint`, `web_profiler`
-- Site acessível em `https://drupagram.ddev.site`
+- Image styles: `drupagram_thumbnail` (150×150, crop), `drupagram_feed` (600×600, crop) e `drupagram_full` (1080px, scale)
+- Responsive Image styles (mobile vs. desktop)
+- Media Library habilitada e configurada para reuso de imagens
+- Alt text e boas práticas de acessibilidade em imagens
 
 ## Conceitos Drupal introduzidos
 
-- Estrutura de diretórios `web/`
-- `settings.php` e configuração de ambiente
-- O painel de administração e o Toolbar
+- Image styles and effects
+- Responsive images
+- Media entities vs. file entities
 
 ## Exercício
 
-Instale o Drupal e tire um screenshot do seu painel de administração em `/admin`.
+Faça upload de 10 imagens e confirme que os thumbnails renderizam nas dimensões corretas.
 
 ## Próximo módulo
 
 ```bash
-git checkout modulo-02
+git checkout modulo-04
 ```
 
-👉 [Acessar Drupagram no Hotmart](https://hotmart.com/product/drupagram)
+👉 [Acessar Drupagram em drupalizando.com.br](https://drupalizando.com.br/#cursos)
