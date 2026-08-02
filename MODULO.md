@@ -1,27 +1,26 @@
-# Módulo 1 — Ambiente de Desenvolvimento
+# Módulo 5 — Taxonomia: Hashtags
 
 ## O que foi construído
 
-- DDEV iniciado e Drupal 10 instalado via Composer
-- Drupal configurado: nome do site, banco de dados, credenciais de admin
-- Drush instalado e funcionando (`drush cr`)
-- Módulos de desenvolvimento habilitados: `devel`, `kint`, `web_profiler`
-- Site acessível em `https://drupagram.ddev.site`
+- Vocabulário "Hashtags" com free tagging habilitado
+- Conexão do vocabulário com o content type Photo Post
+- Página de termo de taxonomia (`/taxonomy/term/N`) funcionando como página de hashtag
+- URLs limpas via Pathauto (ex.: `/hashtag/drupal`)
 
 ## Conceitos Drupal introduzidos
 
-- Estrutura de diretórios `web/`
-- `settings.php` e configuração de ambiente
-- O painel de administração e o Toolbar
+- Taxonomy vocabularies and terms
+- Entity reference fields
+- Pathauto patterns
 
 ## Exercício
 
-Instale o Drupal e tire um screenshot do seu painel de administração em `/admin`.
+Marque 5 posts com hashtags e navegue até uma página de hashtag.
 
 ## Próximo módulo
 
 ```bash
-git checkout modulo-02
+git checkout modulo-06
 ```
 
-👉 [Acessar Drupagram no Hotmart](https://hotmart.com/product/drupagram)
+👉 [Acessar Drupagram em drupalizando.com.br](https://drupalizando.com.br/#cursos)
