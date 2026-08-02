@@ -1,27 +1,27 @@
-# Módulo 1 — Ambiente de Desenvolvimento
+# Módulo 7 — Sistema de Likes com Flag
 
 ## O que foi construído
 
-- DDEV iniciado e Drupal 10 instalado via Composer
-- Drupal configurado: nome do site, banco de dados, credenciais de admin
-- Drush instalado e funcionando (`drush cr`)
-- Módulos de desenvolvimento habilitados: `devel`, `kint`, `web_profiler`
-- Site acessível em `https://drupagram.ddev.site`
+- Módulo Flag instalado via Composer
+- Flag `like_photo` no Photo Post, restrito a usuários autenticados
+- Link de curtir adicionado ao display de teaser do Photo Post
+- Contagem de curtidas exibida no feed via relationship do Views
+- Toggle de curtida via AJAX, sem reload da página
 
 ## Conceitos Drupal introduzidos
 
-- Estrutura de diretórios `web/`
-- `settings.php` e configuração de ambiente
-- O painel de administração e o Toolbar
+- Fluxo de módulos contrib (Composer → habilitar → configurar)
+- Flags do módulo Flag
+- Views relationships com tabelas customizadas
 
 ## Exercício
 
-Instale o Drupal e tire um screenshot do seu painel de administração em `/admin`.
+Curta 3 posts e verifique que a contagem é atualizada.
 
 ## Próximo módulo
 
 ```bash
-git checkout modulo-02
+git checkout modulo-08
 ```
 
-👉 [Acessar Drupagram no Hotmart](https://hotmart.com/product/drupagram)
+👉 [Acessar Drupagram em drupalizando.com.br](https://drupalizando.com.br/#cursos)
