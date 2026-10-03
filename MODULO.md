@@ -2,21 +2,18 @@
 
 ## O que foi construído
 
-- Site Drupagram acessível publicamente na internet
-- Stack LAMP configurada (Apache/Nginx, PHP 8.2, MariaDB)
-- Banco de dados exportado do DDEV e importado no servidor
-- Domínio configurado com SSL via Let's Encrypt (Certbot)
-- Checklist de "ir ao ar" concluído: logs de erro desligados, cache ligado, credenciais de admin trocadas
+- Servidor Ubuntu com Apache, PHP 8.2 e MariaDB provisionado
+- Código do Drupagram implantado via git, configuração importada via `drush cim`
+- HTTPS via Let's Encrypt, site acessível publicamente em um domínio real
 
 ## Conceitos Drupal introduzidos
 
-- Production vs. development settings
-- Trusted host patterns
-- Permissões do sistema de arquivos
+- Stack LAMP em produção (PHP-FPM em vez de `mod_php`)
+- Deploy via git clone + `drush deploy` (updb + cim + cr)
 
 ## Exercício
 
-Faça o deploy do seu Drupagram para uma URL ao vivo e compartilhe na comunidade.
+Acesse o site publicamente via HTTPS, navegue pelo feed, perfis e páginas de hashtag em produção, e confirme que o certificado SSL é válido.
 
 ## Próximo módulo
 
@@ -24,4 +21,4 @@ Faça o deploy do seu Drupagram para uma URL ao vivo e compartilhe na comunidade
 git checkout modulo-bonus
 ```
 
-👉 [Acessar Drupagram em drupalizando.com.br](https://drupalizando.com.br/#cursos)
+👉 [Matricule-se no Drupagram](https://drupalizando.com.br/cursos/drupagram/)
