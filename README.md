@@ -4,7 +4,7 @@
 
 Construa uma rede social de fotos como o Instagram com Drupal — feed de fotos, perfis de usuário, hashtags, curtidas e comentários. Do zero ao deploy, totalmente em português.
 
-🎓 **[Acesse o curso completo no Hotmart →](https://hotmart.com/product/drupagram)**
+🎓 **[Acesse o curso completo em drupalizando.com.br →](https://drupalizando.com.br/#cursos)**
 
 ---
 
