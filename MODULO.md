@@ -2,20 +2,18 @@
 
 ## O que foi construído
 
-- Vocabulário "Hashtags" com free tagging habilitado
-- Conexão do vocabulário com o content type Photo Post
-- Página de termo de taxonomia (`/taxonomy/term/N`) funcionando como página de hashtag
-- URLs limpas via Pathauto (ex.: `/hashtag/drupal`)
+- Free tagging ativado no vocabulário Hashtags
+- Posts de teste tagueados com hashtags variadas
+- Pathauto instalado, com padrões de URL `/hashtag/{nome}` e `/post/{slug}`
 
 ## Conceitos Drupal introduzidos
 
-- Taxonomy vocabularies and terms
-- Entity reference fields
-- Pathauto patterns
+- Vocabulários, termos e free tagging
+- URL aliases amigáveis via Pathauto
 
 ## Exercício
 
-Marque 5 posts com hashtags e navegue até uma página de hashtag.
+Tagueie 5 posts com hashtags variadas, confirme que cada hashtag tem uma página em `/hashtag/{nome}`, e navegue até uma página de hashtag confirmando que só mostra posts daquela tag.
 
 ## Próximo módulo
 
@@ -23,4 +21,4 @@ Marque 5 posts com hashtags e navegue até uma página de hashtag.
 git checkout modulo-06
 ```
 
-👉 [Acessar Drupagram em drupalizando.com.br](https://drupalizando.com.br/#cursos)
+👉 [Matricule-se no Drupagram](https://drupalizando.com.br/cursos/drupagram/)
