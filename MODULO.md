@@ -2,21 +2,18 @@
 
 ## O que foi construído
 
-- Módulo Flag instalado via Composer
-- Flag `like_photo` no Photo Post, restrito a usuários autenticados
-- Link de curtir adicionado ao display de teaser do Photo Post
-- Contagem de curtidas exibida no feed via relationship do Views
-- Toggle de curtida via AJAX, sem reload da página
+- Módulo Flag instalado, com o flag `like_photo` aplicado ao Post de Foto
+- Botão "Curtir"/"Descurtir" via AJAX nos modos de exibição
+- Contagem de curtidas exibida na View Feed Principal
 
 ## Conceitos Drupal introduzidos
 
-- Fluxo de módulos contrib (Composer → habilitar → configurar)
-- Flags do módulo Flag
-- Views relationships com tabelas customizadas
+- Flagging genérico (curtir, favoritar, seguir) via o módulo Flag
+- Permissões de ação de usuário, validadas no servidor
 
 ## Exercício
 
-Curta 3 posts e verifique que a contagem é atualizada.
+Faça login como 3 usuários diferentes e curta posts distintos, confirme que o botão alterna entre "Curtir"/"Descurtir" sem reload de página, e confirme que usuários anônimos não veem o botão de curtir.
 
 ## Próximo módulo
 
@@ -24,4 +21,4 @@ Curta 3 posts e verifique que a contagem é atualizada.
 git checkout modulo-08
 ```
 
-👉 [Acessar Drupagram em drupalizando.com.br](https://drupalizando.com.br/#cursos)
+👉 [Matricule-se no Drupagram](https://drupalizando.com.br/cursos/drupagram/)
