@@ -2,18 +2,18 @@
 
 ## O que foi construído
 
-- Página Explorar (`/explorar`) com grid de posts recentes de todos os usuários
-- Ordenação por mais curtidos (Views sort pela contagem de Flag)
-- Bloco de nuvem de tags (listagem de termos de Taxonomy via Views)
+- View "Explorar" em `/explorar`, em formato grid, ordenada pelos posts mais curtidos
+- Filtro de busca exposto por palavra-chave na legenda
+- Bloco "Tags Populares" (cloud de hashtags)
 
 ## Conceitos Drupal introduzidos
 
-- Views sort by relationship count
-- Tag cloud como bloco de Views
+- Exposed Filters vs filtros fixos
+- Ordenação por métricas (contagem de Flag)
 
 ## Exercício
 
-Construa a página `/explorar` com um filtro de busca por palavra-chave.
+Construa a página `/explorar` com grid de 12 itens e busca exposta na legenda, confirme que a ordenação por curtidas funciona, e teste o campo de busca digitando uma palavra-chave e depois limpando o filtro.
 
 ## Próximo módulo
 
@@ -21,4 +21,4 @@ Construa a página `/explorar` com um filtro de busca por palavra-chave.
 git checkout modulo-11
 ```
 
-👉 [Acessar Drupagram em drupalizando.com.br](https://drupalizando.com.br/#cursos)
+👉 [Matricule-se no Drupagram](https://drupalizando.com.br/cursos/drupagram/)
