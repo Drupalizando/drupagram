@@ -24,4 +24,4 @@ Instale o Drupal e tire um screenshot do seu painel de administração em `/admi
 git checkout modulo-02
 ```
 
-👉 [Acessar Drupagram no Hotmart](https://hotmart.com/product/drupagram)
+👉 [Matricule-se no Drupagram](https://drupalizando.com.br/cursos/drupagram/)
