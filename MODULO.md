@@ -2,19 +2,17 @@
 
 ## O que foi construído
 
-- Page cache, dynamic page cache e render cache habilitados
-- Agregação de CSS/JS habilitada para produção
-- Config management funcionando: `drush config:export` / `drush config:import`
-- `settings.local.php` para overrides específicos de desenvolvimento
+- Cache e agregação de CSS/JS ajustados, BigPipe habilitado
+- Configuração completa do site exportada para `config/sync/` (YAML) e versionada no git
 
 ## Conceitos Drupal introduzidos
 
-- Config management workflow
-- Cache tags e cache contexts
+- Camadas de cache do Drupal (Page, Dynamic Page, Render, Twig)
+- Config Management System (`drush cex` / `drush cim`)
 
 ## Exercício
 
-Exporte a configuração e simule um "deploy": apague e reimporte a config.
+Mude o título da View "Feed Principal" no admin, rode `drush cex` e confirme que o YAML da View mudou (`git diff config/sync/`), e faça o commit dessa mudança de configuração.
 
 ## Próximo módulo
 
@@ -22,4 +20,4 @@ Exporte a configuração e simule um "deploy": apague e reimporte a config.
 git checkout modulo-12
 ```
 
-👉 [Acessar Drupagram em drupalizando.com.br](https://drupalizando.com.br/#cursos)
+👉 [Matricule-se no Drupagram](https://drupalizando.com.br/cursos/drupagram/)
