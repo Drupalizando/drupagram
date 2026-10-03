@@ -2,20 +2,18 @@
 
 ## O que foi construído
 
-- Módulo Comment (core) habilitado e campo de comentário adicionado ao Photo Post
-- Formulário de comentário configurado: threading, preview, comentário anônimo desabilitado
-- Exibição do avatar e nome do autor acima do texto do comentário
-- Permissões de quem pode postar, editar e excluir comentários
+- Comentários habilitados no Post de Foto (aberto, sem moderação prévia)
+- Permissões configuradas: só autenticados podem comentar
+- Tela de moderação de comentários disponível para o admin
 
 ## Conceitos Drupal introduzidos
 
-- Comment field type
-- Comment entity e seus display modes
-- Field formatters
+- Comment como entidade de primeiro nível, independente de Node e User
+- Status de comentário e moderação
 
 ## Exercício
 
-Poste 3 comentários em posts diferentes, usando contas de usuário diferentes.
+Crie 5 comentários em posts diferentes, como diferentes usuários, edite um dos seus próprios comentários, veja a lista completa em **Conteúdo → Comentários** como admin, e teste como anônimo confirmando que não é possível comentar.
 
 ## Próximo módulo
 
@@ -23,4 +21,4 @@ Poste 3 comentários em posts diferentes, usando contas de usuário diferentes.
 git checkout modulo-09
 ```
 
-👉 [Acessar Drupagram em drupalizando.com.br](https://drupalizando.com.br/#cursos)
+👉 [Matricule-se no Drupagram](https://drupalizando.com.br/cursos/drupagram/)
