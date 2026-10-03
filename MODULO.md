@@ -2,22 +2,20 @@
 
 ## O que foi construído
 
-- View do feed principal — página em `/feed`, lista de teasers, paginação de 12 em 12
-- Block display para "Posts Recentes" na sidebar
-- View do feed de perfil, com contextual filter pelo autor
-- View do feed de hashtag, com contextual filter pelo termo de taxonomia
-- Filtro exposto por localização
+- View "Feed Principal" em `/feed` (paginado, com display de Página e de Bloco)
+- View "Feed de Usuário" em `/user/%` via contextual filter
+- View "Feed de Hashtag" em `/hashtag/%` via relationship + contextual filter
+- Filtro exposto de localização e paginação via AJAX
 
 ## Conceitos Drupal introduzidos
 
-- Views displays (Page, Block, Embed)
-- Relationships e contextual filters
-- Filtros expostos
-- Views caching
+- Displays de uma View (Page, Block, Embed)
+- Relationships vs Contextual Filters
+- Exposed Filters
 
 ## Exercício
 
-Construa uma View customizada mostrando posts de uma hashtag específica, paginada de 9 em 9.
+Navegue pelos três feeds e confirme que cada um mostra os posts corretos, teste a paginação no Feed Principal, troque `/user/1` por `/user/2` para confirmar o contextual filter, e construa uma View adicional mostrando posts de uma hashtag específica, paginada de 9 em 9.
 
 ## Próximo módulo
 
@@ -25,4 +23,4 @@ Construa uma View customizada mostrando posts de uma hashtag específica, pagina
 git checkout modulo-07
 ```
 
-👉 [Acessar Drupagram em drupalizando.com.br](https://drupalizando.com.br/#cursos)
+👉 [Matricule-se no Drupagram](https://drupalizando.com.br/cursos/drupagram/)
