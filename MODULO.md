@@ -2,20 +2,18 @@
 
 ## O que foi construído
 
-- Image styles: `drupagram_thumbnail` (150×150, crop), `drupagram_feed` (600×600, crop) e `drupagram_full` (1080px, scale)
-- Responsive Image styles (mobile vs. desktop)
-- Media Library habilitada e configurada para reuso de imagens
-- Alt text e boas práticas de acessibilidade em imagens
+- 3 Image Styles (`drupagram_thumbnail`, `drupagram_feed`, `drupagram_full`) e um Responsive Image Style
+- Image Styles aplicados aos modos de exibição Default e Teaser do Post de Foto
+- Media Library ativada, com alt text preenchido em cada mídia
 
 ## Conceitos Drupal introduzidos
 
-- Image styles and effects
-- Responsive images
-- Media entities vs. file entities
+- File vs Media entity vs Image Style
+- Responsive images e breakpoints
 
 ## Exercício
 
-Faça upload de 10 imagens e confirme que os thumbnails renderizam nas dimensões corretas.
+Faça upload de pelo menos 5 novas imagens com alt text descritivo, confirme que aparecem nos tamanhos corretos (thumbnail no feed, tamanho grande na página individual) e inspecione o HTML de uma imagem para confirmar o caminho `styles/drupagram_feed/...`.
 
 ## Próximo módulo
 
@@ -23,4 +21,4 @@ Faça upload de 10 imagens e confirme que os thumbnails renderizam nas dimensõe
 git checkout modulo-04
 ```
 
-👉 [Acessar Drupagram em drupalizando.com.br](https://drupalizando.com.br/#cursos)
+👉 [Matricule-se no Drupagram](https://drupalizando.com.br/cursos/drupagram/)
