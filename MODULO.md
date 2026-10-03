@@ -2,22 +2,18 @@
 
 ## O que foi construído
 
-- Tema customizado `drupagram` (`*.info.yml`, `*.libraries.yml`, CSS, `templates/`)
-- Regiões definidas: header, main, sidebar, footer
-- Templates Twig: `page.html.twig`, `node--photo-post--teaser.html.twig`, `node--photo-post.html.twig`, `user.html.twig`
-- Grid CSS do feed de fotos (3 colunas no desktop, 1 coluna no mobile)
-- Navbar superior e cabeçalho de perfil (avatar, bio, contadores)
+- Tema customizado "drupagram": layout mobile-first, grid CSS para o feed, navbar com logo e busca
+- Dark mode via toggle em JavaScript (`localStorage`)
+- Templates Twig customizados para o post e o perfil
 
 ## Conceitos Drupal introduzidos
 
-- Twig variables: {{ content }}, {{ node }}, {{ user }}
-- Libraries e asset attachment
-- Theme hooks e suggestions
-- hook_theme_suggestions_alter()
+- Anatomia de um tema Drupal (`.info.yml`, `.libraries.yml`, templates Twig)
+- CSS custom properties como design tokens
 
 ## Exercício
 
-Estilize o teaser do Photo Post para bater com o print de referência do Drupagram.
+Navegue pelo site inteiro (feed, perfil, post individual) com o novo tema ativo, teste em mobile via DevTools, teste o toggle de dark mode, e edite `--primary-color` no CSS confirmando que o site muda de cor.
 
 ## Próximo módulo
 
@@ -25,4 +21,4 @@ Estilize o teaser do Photo Post para bater com o print de referência do Drupagr
 git checkout modulo-10
 ```
 
-👉 [Acessar Drupagram em drupalizando.com.br](https://drupalizando.com.br/#cursos)
+👉 [Matricule-se no Drupagram](https://drupalizando.com.br/cursos/drupagram/)
