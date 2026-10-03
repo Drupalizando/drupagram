@@ -10,7 +10,7 @@ Bem-vindo ao Drupagram! Este branch é o ponto de partida do curso — o projeto
 
 ## Próximo passo
 
-Abra o Módulo 1 do curso no Hotmart e instale o Drupal:
+Abra o Módulo 1 do curso e instale o Drupal:
 
 ```bash
 git checkout modulo-01
@@ -25,6 +25,6 @@ ddev drush site-install --account-name=admin --site-name="Drupagram" -y
 ddev drush uli
 ```
 
-## Curso no Hotmart
+## Curso completo
 
-👉 [Acessar Drupagram no Hotmart](https://hotmart.com/product/drupagram)
+👉 [Matricule-se no Drupagram](https://drupalizando.com.br/cursos/drupagram/)
