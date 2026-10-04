@@ -11,12 +11,14 @@
     },
     "require": {
         "composer/installers": "^2.0",
-        "drupal/core-composer-scaffold": "^10.0",
-        "drupal/core-recommended": "^10.0",
+        "drupal/core-composer-scaffold": "^11.0",
+        "drupal/core-recommended": "^11.0",
         "drupal/flag": "^4.0",
-        "drupal/pathauto": "^1.0",
+        "drupal/kint": "^2.0",
         "drupal/metatag": "^2.0",
-        "drush/drush": "^12.0"
+        "drupal/pathauto": "^1.0",
+        "drupal/webprofiler": "^11.0",
+        "drush/drush": "^13.0"
     },
     "require-dev": {
         "drupal/devel": "^5.0"
@@ -24,7 +26,8 @@
     "config": {
         "allow-plugins": {
             "composer/installers": true,
-            "drupal/core-composer-scaffold": true
+            "drupal/core-composer-scaffold": true,
+            "symfony/runtime": true
         },
         "sort-packages": true
     },
