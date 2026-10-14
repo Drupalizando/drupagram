@@ -1,0 +1,21 @@
+{#
+  Foto do post. No cartão (teaser) a foto é um link para a página do post;
+  a imagem já tem texto alternativo, que vira o nome acessível do link.
+#}
+{%
+  set classes = [
+    'field',
+    'field--name-' ~ field_name|clean_class,
+    'field--type-' ~ field_type|clean_class,
+    'field--label-' ~ label_display,
+  ]
+%}
+{% for item in items %}
+  <div{{ attributes.addClass(classes, 'field__item') }}>
+    {% if element['#view_mode'] == 'teaser' %}
+      <a href="{{ path('entity.node.canonical', {'node': element['#object'].id}) }}">{{ item.content }}</a>
+    {% else %}
+      {{ item.content }}
+    {% endif %}
+  </div>
+{% endfor %}
