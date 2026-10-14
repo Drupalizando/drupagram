@@ -64,3 +64,8 @@ footer[role="contentinfo"] a { color: var(--dg-link); }
 .site-header .site-name a { color: var(--dg-text); text-decoration: none; display: inline-flex; align-items: center; min-height: 44px; }
 .site-header .site-logo { display: inline-flex; align-items: center; min-height: 44px; }
 .site-header .site-logo img { width: 32px; height: 32px; }
+
+@media (max-width: 480px) {
+  /* Keep search, login and the theme toggle on one row on phones. */
+  .site-header input[type="search"] { width: 7.5rem; min-width: 0; }
+}
