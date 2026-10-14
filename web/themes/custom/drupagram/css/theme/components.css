@@ -37,7 +37,7 @@
 .flag-curtir.action-flag::before { content: "🤍" / ""; }
 .flag-curtir.action-unflag::before { content: "❤️" / ""; }
 
-.node__descricao { padding: 0 16px 8px; overflow-wrap: anywhere; }
+.node__descricao { padding: 12px 16px 8px; overflow-wrap: anywhere; }
 .node__descricao p { margin: 0; }
 
 .field--name-field-hashtags { display: flex; flex-wrap: wrap; gap: 4px 10px; padding: 4px 16px 14px; }
@@ -107,3 +107,9 @@ input[type="text"], input[type="search"], input[type="email"], input[type="passw
 
 /* The active menu link keeps the text colour in both themes (the base menu style hard-codes black). */
 ul.menu a.is-active { color: var(--dg-text); font-weight: 700; text-decoration-color: var(--dg-accent); text-decoration-thickness: 2px; }
+
+/* Comment header on one wrapping line; the "log in to comment" prompt shows once, after the last comment. */
+.comment__meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.comment__meta p { margin: 0; }
+.comment__meta .profile:empty { display: none; }
+.comment:not(:last-of-type) .links.inline { display: none; }
