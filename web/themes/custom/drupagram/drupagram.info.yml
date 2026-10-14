@@ -4,6 +4,7 @@ type: theme
 version: 1.0.0
 libraries:
   - drupagram/base
+  - drupagram/global
   - drupagram/messages
   - core/normalize
 libraries-extend:

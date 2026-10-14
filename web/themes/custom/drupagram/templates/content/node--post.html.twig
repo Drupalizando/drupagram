@@ -1,7 +1,12 @@
 {#
   Template para o Post de Foto do Drupagram.
+  Cada bloco só aparece se tiver conteúdo de verdade: renderizamos para texto e
+  descartamos os espaços, porque um array de render "não vazio" pode gerar HTML vazio.
 #}
-{{ attach_library('drupagram/feed') }}
+{% set actions %}{{ content.flag_curtir }}{% endset %}
+{% set descricao %}{{ content.field_descricao }}{% endset %}
+{% set hashtags %}{{ content.field_hashtags }}{% endset %}
+{% set comentarios %}{{ content.field_comentarios }}{% endset %}
 <article{{ attributes.addClass('node--type-post', 'node--view-mode-' ~ view_mode) }}>
 
   <header class="node__meta">
@@ -13,27 +18,27 @@
   <div class="node__content">
     {{ content.field_foto }}
 
-    {% if content.flag_curtir is not empty %}
+    {% if can_like and actions|trim is not empty %}
       <div class="node__actions">
-        {{ content.flag_curtir }}
+        {{ actions }}
       </div>
     {% endif %}
 
-    {% if content.field_descricao is not empty %}
+    {% if descricao|striptags('<img>')|trim is not empty %}
       <div class="node__descricao">
-        {{ content.field_descricao }}
+        {{ descricao }}
       </div>
     {% endif %}
 
-    {% if content.field_hashtags is not empty %}
+    {% if hashtags|striptags('<img>')|trim is not empty %}
       <div class="node__hashtags">
-        {{ content.field_hashtags }}
+        {{ hashtags }}
       </div>
     {% endif %}
 
-    {% if content.field_comentarios is not empty %}
+    {% if comentarios|trim is not empty %}
       <div class="node__comentarios">
-        {{ content.field_comentarios }}
+        {{ comentarios }}
       </div>
     {% endif %}
   </div>

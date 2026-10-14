@@ -19,3 +19,13 @@ function drupagram_preprocess_image_widget(array &$variables) {
     unset($data['preview']);
   }
 }
+
+/**
+ * Implements hook_preprocess_node().
+ */
+function drupagram_preprocess_node(array &$variables) {
+  // O link de curtir é montado depois (placeholder), então o template não sabe
+  // se ele vai ficar vazio. Perguntamos pela permissão para não gerar uma barra vazia.
+  $variables['can_like'] = \Drupal::currentUser()->hasPermission('flag curtir');
+  $variables['#cache']['contexts'][] = 'user.permissions';
+}
