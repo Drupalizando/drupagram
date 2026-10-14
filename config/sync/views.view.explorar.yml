@@ -166,7 +166,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: default
+          view_mode: teaser
       query:
         type: views_query
         options:
