@@ -1,0 +1,32 @@
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.foto.field_media_image
+    - image.style.medium
+    - media.type.foto
+  module:
+    - image
+id: media.foto.media_library
+targetEntityType: media
+bundle: foto
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_media_image: true
+  langcode: true
+  name: true
+  uid: true
