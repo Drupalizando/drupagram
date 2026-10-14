@@ -1,8 +1,17 @@
-feed:
+global:
   version: VERSION
   css:
     theme:
+      css/theme/tokens.css: {}
+      css/theme/layout.css: {}
+      css/theme/components.css: {}
       css/feed.css: {}
+  js:
+    js/theme-toggle.js: {}
+  header: true
+  dependencies:
+    - core/drupal
+    - core/once
 
 base:
   version: VERSION

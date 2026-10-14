@@ -1,0 +1,19 @@
+{#
+  Bloco "Inscrever-se" (RSS) no rodapé. O Drupal marca este bloco com role="complementary",
+  mas ele já está dentro do rodapé (contentinfo): um landmark dentro de outro é erro de acessibilidade.
+#}
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+  ]
+%}
+<div{{ attributes.removeAttribute('role').addClass(classes) }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+  {{ content }}
+</div>
