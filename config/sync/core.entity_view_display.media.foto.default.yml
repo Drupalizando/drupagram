@@ -1,0 +1,31 @@
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.media.foto.field_media_image
+    - image.style.large
+    - media.type.foto
+  module:
+    - image
+id: media.foto.default
+targetEntityType: media
+bundle: foto
+mode: default
+content:
+  field_media_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true
