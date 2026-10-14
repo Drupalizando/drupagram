@@ -44,12 +44,18 @@
 #}
 <div class="layout-container">
 
-  <header role="banner">
-    {{ page.header }}
+  <header class="site-header" role="banner">
+    <div class="site-header__brand">
+      {{ page.header }}
+    </div>
+    <div class="site-header__nav">
+      {{ page.primary_menu }}
+      {{ page.secondary_menu }}
+      <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">
+        <span class="visually-hidden">Alternar tema escuro</span>
+      </button>
+    </div>
   </header>
-
-  {{ page.primary_menu }}
-  {{ page.secondary_menu }}
 
   {{ page.breadcrumb }}
 
