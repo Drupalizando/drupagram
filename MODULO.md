@@ -2,18 +2,23 @@
 
 ## O que foi construído
 
-- Tema customizado "drupagram": layout mobile-first, grid CSS para o feed, navbar com logo e busca
-- Dark mode via toggle em JavaScript (`localStorage`)
-- Templates Twig customizados para o post e o perfil
+- Tema customizado "drupagram" (Starterkit sobre `stable9`) com design tokens em CSS custom properties
+- Cabeçalho responsivo com logo, busca, menu e botão de tema
+- Feed em grade: 1 coluna no celular, 2 no tablet, 3 no desktop
+- Cartão do post (`teaser`) com foto, curtir, descrição e hashtags; comentários só na página do post
+- Dark mode por botão, respeitando a preferência do sistema, com a escolha salva no navegador
+- Acessibilidade essencial: link para pular ao conteúdo, foco visível, contraste, textos alternativos e movimento reduzido
 
 ## Conceitos Drupal introduzidos
 
 - Anatomia de um tema Drupal (`.info.yml`, `.libraries.yml`, templates Twig)
+- Modos de exibição (`teaser` e `default`) e como as Views os usam
+- Posicionamento de blocos em regiões
 - CSS custom properties como design tokens
 
 ## Exercício
 
-Navegue pelo site inteiro (feed, perfil, post individual) com o novo tema ativo, teste em mobile via DevTools, teste o toggle de dark mode, e edite `--primary-color` no CSS confirmando que o site muda de cor.
+Navegue pelo feed, pela página de um post e por uma hashtag em três larguras (320, 768 e 1280 pixels), alterne o dark mode e confirme que a escolha continua depois de recarregar. Edite `--dg-accent` em `css/theme/tokens.css` e veja a cor mudar.
 
 ## Próximo módulo
 
