@@ -41,7 +41,7 @@
 .node__descricao p { margin: 0; }
 
 .field--name-field-hashtags { display: flex; flex-wrap: wrap; gap: 4px 10px; padding: 4px 16px 14px; }
-.field--name-field-hashtags a { overflow-wrap: anywhere; text-decoration: none; font-weight: 600; }
+.field--name-field-hashtags a { overflow-wrap: anywhere; text-decoration: none; font-weight: 600; color: var(--dg-accent); }
 .field--name-field-hashtags a::before { content: "#"; }
 
 .node__comentarios { padding: 0 16px 12px; border-top: 1px solid var(--dg-border); margin-top: 8px; }
@@ -106,4 +106,4 @@ input[type="text"], input[type="search"], input[type="email"], input[type="passw
 .node__comentarios .links a, .comment .links a { display: inline-flex; align-items: center; min-height: 24px; }
 
 /* The active menu link keeps the text colour in both themes (the base menu style hard-codes black). */
-ul.menu a.is-active { color: var(--dg-text); font-weight: 700; }
+ul.menu a.is-active { color: var(--dg-text); font-weight: 700; text-decoration-color: var(--dg-accent); text-decoration-thickness: 2px; }
