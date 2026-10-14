@@ -105,7 +105,8 @@
   {% endif %}
 
   <div{{ content_attributes.addClass('content') }}>
-    {% if title %}
+    {# Comentário sem assunto gera um título e um link vazios; só mostramos se houver texto. #}
+    {% if title|striptags|trim is not empty %}
       {{ title_prefix }}
       <h3{{ title_attributes }}>{{ title }}</h3>
       {{ title_suffix }}
