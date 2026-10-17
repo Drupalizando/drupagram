@@ -1,21 +1,25 @@
-/* Feed and explorar grids: one column on phones, two on tablets, three on desktop. */
+/* Feed, explorar and hashtag (taxonomy term) grids: one column on phones, two on tablets, three on desktop. */
 .view-feed-fotos .view-content,
-.view-explorar .view-content {
+.view-explorar .view-content,
+.view-taxonomy-term .view-content {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--dg-gap);
   padding: 8px 0 16px;
 }
 .view-feed-fotos .view-content > *,
-.view-explorar .view-content > * { min-width: 0; }
+.view-explorar .view-content > *,
+.view-taxonomy-term .view-content > * { min-width: 0; }
 
 @media (min-width: 600px) {
   .view-feed-fotos .view-content,
-  .view-explorar .view-content { grid-template-columns: repeat(2, 1fr); }
+  .view-explorar .view-content,
+  .view-taxonomy-term .view-content { grid-template-columns: repeat(2, 1fr); }
 }
 @media (min-width: 960px) {
   .view-feed-fotos .view-content,
-  .view-explorar .view-content { grid-template-columns: repeat(3, 1fr); }
+  .view-explorar .view-content,
+  .view-taxonomy-term .view-content { grid-template-columns: repeat(3, 1fr); }
 }
 
 /* Square photo in grid cards, natural ratio on the post page. */

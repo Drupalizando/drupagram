@@ -108,8 +108,8 @@ input[type="text"], input[type="search"], input[type="email"], input[type="passw
 /* The active menu link keeps the text colour in both themes (the base menu style hard-codes black). */
 ul.menu a.is-active { color: var(--dg-text); font-weight: 700; text-decoration-color: var(--dg-accent); text-decoration-thickness: 2px; }
 
-/* Comment header on one wrapping line; the "log in to comment" prompt shows once, after the last comment. */
+/* Comment header on one wrapping line; the anonymous "log in to comment" prompt shows once, after the last comment (logged-in users keep every comment's links). */
 .comment__meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
 .comment__meta p { margin: 0; }
 .comment__meta .profile:empty { display: none; }
-.comment:not(:last-of-type) .links.inline { display: none; }
+body:not(.user-logged-in) .comment:not(:last-of-type) .links.inline { display: none; }
