@@ -89,8 +89,8 @@ input[type="text"], input[type="search"], input[type="email"], input[type="passw
   border-radius: 50%;
   cursor: pointer;
 }
-.theme-toggle::before { content: "🌙" / ""; font-size: 1.25rem; }
-:root[data-theme="dark"] .theme-toggle::before { content: "☀️" / ""; }
+/* One text glyph in both themes: it takes the button's text colour, so contrast follows the tokens. */
+.theme-toggle::before { content: "\25D0" / ""; font-size: 1.5rem; line-height: 1; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
