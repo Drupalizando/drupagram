@@ -29,3 +29,16 @@ function drupagram_preprocess_node(array &$variables) {
   $variables['can_like'] = \Drupal::currentUser()->hasPermission('flag curtir');
   $variables['#cache']['contexts'][] = 'user.permissions';
 }
+
+/**
+ * Implements hook_preprocess_block().
+ */
+function drupagram_preprocess_block(array &$variables) {
+  // A tradução pt-br do bloco "Desenvolvido com Drupal" usa um marcador que o
+  // Drupal não substitui, e o link ficava com href="@poweredby".
+  if ($variables['plugin_id'] === 'system_powered_by_block') {
+    $variables['content'] = [
+      '#markup' => '<span>' . t('Desenvolvido com <a href=":url">Drupal</a>', [':url' => 'https://www.drupal.org']) . '</span>',
+    ];
+  }
+}
