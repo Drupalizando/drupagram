@@ -1,0 +1,15 @@
+uuid: b60253a9-343e-4327-b603-a32e7e3bef3b
+langcode: pt-br
+status: true
+dependencies: {  }
+name: drupagram_full
+label: 'Drupagram página do post (1080)'
+effects:
+  db2cb535-cc98-4f0b-be46-41be334507db:
+    uuid: db2cb535-cc98-4f0b-be46-41be334507db
+    id: image_scale
+    weight: 1
+    data:
+      width: 1080
+      height: 1080
+      upscale: false
