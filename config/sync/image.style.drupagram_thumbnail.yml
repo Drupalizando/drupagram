@@ -1,0 +1,15 @@
+uuid: 52d1b56c-f697-420b-ab4a-92b31cd801cb
+langcode: pt-br
+status: true
+dependencies: {  }
+name: drupagram_thumbnail
+label: 'Drupagram miniatura (150×150)'
+effects:
+  902d659f-8026-4e50-b393-9b19cad0b16d:
+    uuid: 902d659f-8026-4e50-b393-9b19cad0b16d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 150
+      height: 150
+      anchor: center-center
