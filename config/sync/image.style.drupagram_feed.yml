@@ -1,0 +1,15 @@
+uuid: 4752b520-2ef4-4bc1-b578-5dabc5faaaab
+langcode: pt-br
+status: true
+dependencies: {  }
+name: drupagram_feed
+label: 'Drupagram feed (600×600)'
+effects:
+  9d87f2cf-e4f7-4d13-9adb-89f979108362:
+    uuid: 9d87f2cf-e4f7-4d13-9adb-89f979108362
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 600
+      anchor: center-center
