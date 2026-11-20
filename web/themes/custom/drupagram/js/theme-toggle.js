@@ -18,23 +18,29 @@
   }
   function apply(theme) {
     document.documentElement.setAttribute('data-theme', theme);
+    document.querySelectorAll('[data-theme-toggle]').forEach(function (button) {
+      button.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+    });
   }
 
   // Runs in <head> (library header: true) so the right theme is set before first paint.
   apply(current());
 
+  // Until the visitor picks a theme, follow the system when it changes (e.g. automatic dark at sunset).
+  if (window.matchMedia) {
+    var query = window.matchMedia('(prefers-color-scheme: dark)');
+    var follow = function () { if (!stored()) { apply(current()); } };
+    if (query.addEventListener) { query.addEventListener('change', follow); } else if (query.addListener) { query.addListener(follow); }
+  }
+
   Drupal.behaviors.drupagramThemeToggle = {
     attach: function (context) {
       once('drupagram-theme-toggle', '[data-theme-toggle]', context).forEach(function (button) {
-        function sync() {
-          button.setAttribute('aria-pressed', document.documentElement.getAttribute('data-theme') === 'dark' ? 'true' : 'false');
-        }
-        sync();
+        button.setAttribute('aria-pressed', document.documentElement.getAttribute('data-theme') === 'dark' ? 'true' : 'false');
         button.addEventListener('click', function () {
           var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
           apply(next);
           store(next);
-          sync();
         });
       });
     }
