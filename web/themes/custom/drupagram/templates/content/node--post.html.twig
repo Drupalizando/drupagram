@@ -15,6 +15,10 @@
     <span class="node__date">{{ date }}</span>
   </header>
 
+  {% if view_mode == 'teaser' %}
+    <h2 id="post-title-{{ node.id }}" class="visually-hidden">{{ label }}</h2>
+  {% endif %}
+
   <div class="node__content">
     {{ content.field_foto }}
 
@@ -36,7 +40,7 @@
       </div>
     {% endif %}
 
-    {% if comentarios|trim is not empty %}
+    {% if comentarios|striptags('<img>')|trim is not empty %}
       <div class="node__comentarios">
         {{ comentarios }}
       </div>

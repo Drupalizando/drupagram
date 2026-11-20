@@ -1,6 +1,7 @@
 {#
-  Foto do post. No cartão (teaser) a foto é um link para a página do post;
-  a imagem já tem texto alternativo, que vira o nome acessível do link.
+  Foto do post. No cartão (teaser) um link vazio cobre a foto e leva ao post. Ele fica ao lado da mídia,
+  não em volta dela, para não aninhar controles do editor dentro de um link, e o nome dele é o título
+  do post (o h2 escondido do cartão), não o texto alternativo da imagem. Sem mídia visível, sem link.
 #}
 {%
   set classes = [
@@ -12,10 +13,9 @@
 %}
 {% for item in items %}
   <div{{ attributes.addClass(classes, 'field__item') }}>
-    {% if element['#view_mode'] == 'teaser' %}
-      <a href="{{ path('entity.node.canonical', {'node': element['#object'].id}) }}">{{ item.content }}</a>
-    {% else %}
-      {{ item.content }}
+    {{ item.content }}
+    {% if element['#view_mode'] == 'teaser' and item.content|render|striptags('<img>')|trim is not empty %}
+      <a class="field__card-link" href="{{ path('entity.node.canonical', {'node': element['#object'].id}) }}" aria-labelledby="post-title-{{ element['#object'].id }}"></a>
     {% endif %}
   </div>
 {% endfor %}
