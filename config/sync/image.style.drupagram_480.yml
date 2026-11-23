@@ -1,0 +1,21 @@
+uuid: 445d2462-b88b-4b3e-b25a-8bde5fdafc34
+langcode: pt-br
+status: true
+dependencies: {  }
+name: drupagram_480
+label: 'Drupagram 480 de largura'
+effects:
+  9fd8e46e-5596-4952-9956-96fc6f389b41:
+    uuid: 9fd8e46e-5596-4952-9956-96fc6f389b41
+    id: image_scale
+    weight: 1
+    data:
+      width: 480
+      height: null
+      upscale: false
+  2a502e7e-b1ae-4714-a5e9-4742b19005c2:
+    uuid: 2a502e7e-b1ae-4714-a5e9-4742b19005c2
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
