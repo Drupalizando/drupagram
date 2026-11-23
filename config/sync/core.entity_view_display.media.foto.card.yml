@@ -1,0 +1,33 @@
+uuid: 888139c1-5cbb-42a9-aaca-122d408d9434
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.card
+    - field.field.media.foto.field_media_image
+    - media.type.foto
+    - responsive_image.styles.drupagram_card
+  module:
+    - responsive_image
+id: media.foto.card
+targetEntityType: media
+bundle: foto
+mode: card
+content:
+  field_media_image:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: drupagram_card
+      image_link: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true
