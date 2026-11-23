@@ -1,0 +1,23 @@
+uuid: 0d717a34-9bcf-4ad1-931c-68055381ecfa
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - image.style.drupagram_480
+    - image.style.drupagram_800
+    - image.style.drupagram_full
+id: drupagram_card
+label: 'Drupagram cartão'
+image_style_mappings:
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: '(min-width: 960px) 33vw, (min-width: 600px) 50vw, 100vw'
+      sizes_image_styles:
+        - drupagram_480
+        - drupagram_800
+        - drupagram_full
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: drupagram_480
