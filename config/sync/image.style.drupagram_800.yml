@@ -1,0 +1,21 @@
+uuid: f127f2b1-b42f-4e68-b5bf-aaf1c5640553
+langcode: pt-br
+status: true
+dependencies: {  }
+name: drupagram_800
+label: 'Drupagram 800 de largura'
+effects:
+  70d052e9-ef32-4739-b3f1-5e9f79d8e2a5:
+    uuid: 70d052e9-ef32-4739-b3f1-5e9f79d8e2a5
+    id: image_scale
+    weight: 1
+    data:
+      width: 800
+      height: null
+      upscale: false
+  e1f0a6bb-2d31-456f-8064-519182645247:
+    uuid: e1f0a6bb-2d31-456f-8064-519182645247
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
