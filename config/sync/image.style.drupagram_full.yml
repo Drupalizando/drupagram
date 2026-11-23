@@ -3,13 +3,19 @@ langcode: pt-br
 status: true
 dependencies: {  }
 name: drupagram_full
-label: 'Drupagram página do post (1080)'
+label: 'Drupagram 1080 de largura'
 effects:
-  db2cb535-cc98-4f0b-be46-41be334507db:
-    uuid: db2cb535-cc98-4f0b-be46-41be334507db
+  9d1f2aaf-3b9f-4a88-803d-e9e8b55f2f0d:
+    uuid: 9d1f2aaf-3b9f-4a88-803d-e9e8b55f2f0d
     id: image_scale
     weight: 1
     data:
       width: 1080
-      height: 1080
+      height: null
       upscale: false
+  ffa8df08-d82f-4aba-a42b-d20d8074d69c:
+    uuid: ffa8df08-d82f-4aba-a42b-d20d8074d69c
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
