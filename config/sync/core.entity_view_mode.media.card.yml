@@ -1,0 +1,11 @@
+uuid: 4799fbdd-7c37-4d6c-af47-696480ce04a8
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - media
+id: media.card
+label: Cartão
+description: ''
+targetEntityType: media
+cache: true
