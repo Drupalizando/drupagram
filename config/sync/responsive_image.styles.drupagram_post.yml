@@ -1,0 +1,23 @@
+uuid: 05f920a6-7576-4dd9-b265-39ea440f7eb0
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - image.style.drupagram_480
+    - image.style.drupagram_800
+    - image.style.drupagram_full
+id: drupagram_post
+label: 'Drupagram página do post'
+image_style_mappings:
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: '(min-width: 640px) 640px, 100vw'
+      sizes_image_styles:
+        - drupagram_480
+        - drupagram_800
+        - drupagram_full
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: drupagram_800
